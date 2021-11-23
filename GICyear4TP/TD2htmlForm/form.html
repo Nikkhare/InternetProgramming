@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Submit your profile</title>
+</head>
+<body>
+  <form action="/my-backend/profile" method="POST">
+    <table width="100%" cellspacing="30px;">
+      <tr>
+        <td colspan="2" style="border: 1px solid black; background-color: grey;">
+          <h2>Tell us about yourself</h2>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <h4>Profile Information</h4>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div>Last Name</div>
+          <input name="lastName" type="text" style="width: 100%;"/>
+        </td>
+        <td>
+          <div>First Name</div>
+          <input name="firstName" type="text" style="width: 100%;"/>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div>Email</div>
+          <input name="email" type="text" style="width: 100%;"/>
+        </td>
+        <td>
+          <div>Phone</div>
+          <input name="phone" type="text" style="width: 100%;"/></div>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <span>Gender</span>
+          <input name="gender" type="radio" value="male"/> Male 
+          <input name="gender" type="radio" value="female"/> Female
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <h4>Current Address</h4>
+          <select name="city">
+            <option value="" disabled selected>Province/City</option>
+            <option value="Phnom Penh">Phnom Penh</option>
+            <option value="Kampong Cham">Kampong Cham</option>
+            <option value="Preyveng">Preyveng</option>
+          </select>
+          <select name="country">
+            <option value="" disabled selected>Country</option>
+            <option value="Cambodia">Cambodia</option>
+            <option value="Franch">Franch</option>
+            <option value="England">England</option>
+            <option value="Japan">Japan</option>
+          </select>
+
+          <input type="text" class="form-control" name="postal" id="postal" placeholder="Post Code" autocomplete="off">
+        
+          <h4>Address</h4>
+          <textarea name="address" rows="5" cols="50" placeholder="address" autocomplete="off"></textarea>
+        </td>
+      </tr>
+
+      <tr>
+        <td colspan="2">
+          <h4>Skills</h4>
+          <input name="skills" type="checkbox" value="designing"/> Designing 
+          <input name="skills" type="checkbox" value="database"/> Database management 
+          <div>
+            <input name="skills" type="checkbox" value="coding"/> Coding
+            <input name="skills" type="checkbox" value="debug"/> Debug
+
+          <h4>Languages</h4>
+          <input name="Languages" type="checkbox" value="khmer"/> Khmer 
+          <input name="Languages" type="checkbox" value="english"/> English 
+          <div>
+            <input name="Languages" type="checkbox" value="french"/> French
+            <input name="Languages" type="checkbox" value="japanese"/> Japanese </div>
+        </td>
+      </tr>
+
+      <td>
+      <div class="row mt-2 pt-2">
+
+        <h4>Experiences</h4>
+
+      <table class="table table-strip scrollable">
+
+        <thead>
+
+          <th>From</th>
+
+          <th>To</th>
+
+          <th>Description</th>
+
+        </thead>
+
+        <tbody>
+            
+                <tr id="1">
+                    <td><input type="text" class="form-control" id=1-1></td>
+
+                    <td><input type="text" class="form-control" id=1-2></td>
+
+                    <td><input type="text" class="form-control" id=1-3 style="width: 230%;"></td>
+                </tr>
+                <tr id="2">
+
+                    <td><input type="text" class="form-control" id=2-1></td>
+
+                    <td><input type="text" class="form-control" id=2-2></td>
+
+                    <td><input type="text" class="form-control" id=2-3 style="width: 230%;"></td>
+                </tr>
+                <tr id="3">
+
+                    <td><input type="text" class="form-control" id=3-1></td>
+
+                    <td><input type="text" class="form-control" id=3-2></td>
+
+                    <td><input type="text" class="form-control" id=3-3 style="width: 230%;"></td>
+                </tr>
+                <tr id="4">
+                    <td><input type="text" class="form-control" id=4-1 ></td>
+
+                    <td><input type="text" class="form-control" id=4-2 ></td>
+
+                    <td><input type="text" class="form-control" id=4-3 style="width: 230%;"></td>
+                </tr>
+        </tbody>
+
+      </table>
+
+    </div></td>
+
+      <tr>
+        <td colspan="2">
+          <h4>Choose your profile photo</h4>
+          <input type="file" />
+        </td>
+      </tr>
+    </table>
+    <p align="right">
+    <button type="submit" style="color: blue;">Submit</button>
+    </p>
+
+  </form>
+</body>
+</html>
