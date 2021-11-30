@@ -1,0 +1,89 @@
+.container {
+    margin-left: 22%;
+    position: relative;
+    padding: 80px;
+
+}
+.about_me{
+    position: relative;
+    height: 100%;
+  }
+.sidebar {
+
+    width: 22%;
+
+    height: 100%;
+
+    background-color: #fff;
+
+    border: 1px solid;
+
+    position: fixed;
+
+}
+
+.role{
+    border-bottom: 2px solid orange;
+    width: max-content;
+}
+.services {
+    margin-top: 30px;
+    display: grid;
+    grid-column-gap: 20px;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
+}
+.services img {
+    width: 90px;
+    height: 100px;
+}
+
+.clients {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+
+}
+
+.clients img {
+    width: 80px;
+    height: 80px;
+}
+
+.fun_facts {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 30px;
+
+}
+
+  #nav {
+    list-style-type: none;
+    text-align: center;
+    padding: 0px;
+  }
+  #nav li {
+    position: relative;
+    padding: 10px;
+    border-bottom: 1px solid rgb(237, 236, 236);
+    border-top: 1px solid rgb(237, 236, 236);
+    margin-top: -1px;
+  }
+  #nav li.active {
+    background-color: #f5f3f3;
+  }
+  li.active a:after {
+    background-color: #f4c052;
+    display: block;
+    position: absolute;
+    content: ' ';
+    right: 0;
+    bottom: 0;
+    width: 3px;
+    height: 100%;
+  }
+  #nav a {
+    color: black;
+    text-decoration: none;
+  }
+
