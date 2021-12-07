@@ -4,11 +4,13 @@
     padding: 80px;
 
 }
+
 .about_me{
     position: relative;
+
     height: 100%;
   }
-.sidebar {
+/*.sidebar {
 
     width: 22%;
 
@@ -20,6 +22,21 @@
 
     position: fixed;
 
+}*/
+.sidebar {
+  width: 22%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+  padding-top: 20px;
+}
+.sidebar img {
+  width: 80px;
+  border-radius: 100%;
+  border: 2px solid #e5e5e5;
+}
+.sidebar h4 {
+  color: #d1cfcf;
 }
 
 .role{
@@ -69,10 +86,10 @@
     border-top: 1px solid rgb(237, 236, 236);
     margin-top: -1px;
   }
-  #nav li.active {
+  #nav li.active2 {
     background-color: #f5f3f3;
   }
-  li.active a:after {
+  li.active2 a:after {
     background-color: #f4c052;
     display: block;
     position: absolute;
@@ -87,3 +104,5 @@
     text-decoration: none;
   }
 
+  
+  
