@@ -1,0 +1,34 @@
+.body {
+    margin: 0px;
+    }
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+}
+
+.big {
+    padding: 5px;
+    color: white;
+    font-size: 2rem;
+    background: rgb(31, 192, 31);
+}
+
+.small {
+    background: rgb(211, 84, 0);
+    padding: 5px;
+    color: white;
+}
+
+@media (max-width: 350px) {
+    .big {
+        display: none;
+    }
+    .small {
+        display: none;
+    }
+
+}
+
