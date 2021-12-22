@@ -1,0 +1,22 @@
+.body {
+    margin: 0px;
+    }
+.wrapper{
+    height: 350px;
+    width: 500px;
+    border: 1px solid;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 10px;
+    column-gap: 25px;
+    background-color: rgba(226, 216, 216, 0.856);
+}
+.drop {
+  animation: drop 1.5s ease-in-out;
+  animation-delay: calc(var(--order) * 120ms);
+}
+@keyframes drop {
+    from { transform: translateY(-120px)}
+    to { transform: translateY(0px)}
+}

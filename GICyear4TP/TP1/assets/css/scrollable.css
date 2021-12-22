@@ -1,0 +1,16 @@
+.body {
+    margin: 0px;
+    }
+.header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: lighter;
+    text-align: center;
+    background: rgb(192, 180, 180);
+}
+.content {
+    max-height: 690px;
+    border: 1px solid;
+    overflow-y: scroll;
+}
+
