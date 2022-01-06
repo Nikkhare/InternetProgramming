@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Shop</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/ex4BookShopCRUD.css"
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Book Name*</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                        <input type="text" name="fullName" id="fullName">
+                    </div>
+                    <div>
+                        <label>Category</label>
+                        <input type="text" name="category" id="category">
+                    </div>
+                    <div>
+                        <label>Price</label>
+                        <input type="text" name="price" id="price">
+                    </div>
+                    <div>
+                        <label>IBN Code</label>
+                        <input type="text" name="code" id="code">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Add">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="bookList">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Category</th>
+                            <th>Price</th>
+                            <th>IBN Code</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script src="/assets/js/ex4BookShopCRUD.js"></script>
+</body>
+
+</html>

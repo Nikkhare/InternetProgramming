@@ -1,0 +1,12 @@
+
+#imageCanvas {
+  border: solid 5px rgb(121, 118, 118);
+}
+.container {
+  background-color: rgb(121, 118, 118);
+  width: 510px;
+  color: white;
+  padding: 10px 0px;
+
+}
+
