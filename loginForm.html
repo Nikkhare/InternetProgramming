@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="/assets/css/loginForm.css" />
+  </head>
+  <body>
+
+    <div class="wrapper">
+      <div class="box" id="loginform">
+        <div class="box-login">
+          <div class="image">
+            <img width="200" src="/assets/images/avatar.png" alt="" />
+          </div>
+
+          <form id="loginForm" class="form">
+            <label for="email">Email</label> <br />
+            <input type="email" id="email" required placeholder="Enter email" />
+            <br />
+            <label for="password">Password</label> <br />
+            <input
+              type="password"
+              id="password"
+              required
+              placeholder="Enter password"
+
+            />
+
+            <br />
+            <input type="submit" value="Login" id="login" />
+          </form>
+        </div>
+      </div>
+      <div id="logged">
+        <h2>Welcome to Home Page</h2>
+        <p>You will be automatically logged out.</p>
+        <p>Keep refreshing page</p>
+        <button id="logout">Logout</button>
+
+      </div>
+    </div>
+            <script src="/assets/js/loginForm.js"></script>
+  </body>
+</html>

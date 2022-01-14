@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Shop</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="/assets/css/bookShop.css" />
+  </head>
+  <body>
+
+    <div id="container">
+      <div id="left">
+        <form id="form" name="addbook">
+          <label for="name">Name</label> <br />
+          <input type="text" id="name" required /> <br />
+          <label for="category">Category</label> <br />
+          <input type="text" id="category" required /> <br />
+          <label for="price">Price</label> <br />
+          <input type="number" id="price" required /> <br />
+          <button type="submit" id="add">Add</button>
+          <button type="button" id="update" style="display: none">update</button>
+        </form>
+      </div>
+
+      <div id="right">
+        <div id="listbook" class="list-books">
+        </div>
+        </div>
+      </div>
+            <script src="/assets/js/bookShop.js"></script>
+    </div>
+
+  </body>
+</html>
