@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>5 Promise</title>
+
+</head>
+
+<body>
+    <script>
+        let promise1 = new Promise(function(resolve, reject) {
+            setTimeout(() => {
+                resolve("😘");
+            }, 1000);
+        });
+
+        let promise2 = new Promise(function(resolve, reject) {
+            setTimeout(() => {
+                resolve("😕");
+            }, 2 * 1000);
+
+        });
+
+        let promise3 = new Promise(function(resolve, reject) {
+            setTimeout(() => {
+                resolve("😜");
+            }, 3 * 1000);
+        });
+
+        let promise4 = new Promise(function(resolve, reject) {
+            setTimeout(() => {
+                resolve("😴");
+            }, 4 * 1000);
+        });
+
+        let promise5 = new Promise(function(resolve, reject) {
+            setTimeout(() => {
+                resolve("🤤");
+            }, 5 * 1000);
+        });
+        Promise.all([promise1, promise2, promise3, promise4, promise5]).then(() =>
+            console.log("All  tasks  are  ready!")
+
+        );
+    </script>
+</body>
+
+</html>
