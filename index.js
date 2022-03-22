@@ -13,7 +13,7 @@ const port = 3001;
 //middleware
 app.use(cors());
 app.use(express.json());
-app.use(cookieParser());
+app.use(cookieParser()); 
 //connect mongoDB
 const uri = "mongodb://localhost:27017/tp09";
 mongoose
